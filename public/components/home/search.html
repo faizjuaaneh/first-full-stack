@@ -1,0 +1,43 @@
+<center>
+    <div>
+        <h2><big>Enter student ID :</big> </h2>
+        <input type="text" ng-model="text1" placeholder="Enter student Number">
+        <br>
+        <br>
+        <input type="button" ng-click="getstudent()" value="Get student">
+    </div>
+
+    <div>
+        <div ng-repeat="item in stuobj">
+            <div class="container">
+
+                <h2> Table</h2>
+                <p> student information :</p>
+                <table class="table-view">
+                    <thead>
+                        <tr class="table-head">
+                            <td>Id</td>
+                            <td>FullName</td>
+                            <td>Age</td>
+                            <td>Date</td>
+                            <td>gender</td>
+                            <td>married</td>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>{{item.ID}}</th>
+                            <th>{{item.FullName}}</th>
+                            <th>{{item.Age}}</th>
+                            <th>{{item.Date}}</th>
+                            <th>{{item.gender}}</th>
+                            <th>{{item.married}}</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+</center>

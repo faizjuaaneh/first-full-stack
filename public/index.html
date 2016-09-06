@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bassmaApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title> student the bassma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+<!--    <img src="components/home/photo/bassma.jpg" width="460px" height="200px">-->
+</head>
+
+<body class="container">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">HOME</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/database">DataBASE <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#/search">search</a></li>
+                    <li><a href="#/about">about</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="http://www.basmeh-zeitooneh.org/" target="_blank"> Link</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--    <div class="container">-->
+<!--
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li class="item1 active"></li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+                <li class="item4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <img src="components/home/photo/IMG1.JPG" class="img-circle" alt="Chania" width="250px" height="200px">
+                    <div class="carousel-caption">
+                        <h3>bekaa</h3>
+                        <p>Basmeh & Zeitooneh</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="components/home/photo/IMG2.JPG" class="img-circle" alt="Chania" width="250px" height="200px">
+                    <div class="carousel-caption">
+                        <h3>bekaa</h3>
+                        <p>Basmeh & Zeitooneh</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="components/home/photo/IMG3.JPG" class="img-circle" alt="Flower" width="250px" height="200px">
+                    <div class="carousel-caption">
+                        <h3>bekaa</h3>
+                        <p>Basmeh & Zeitooneh</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="components/home/photo/IMG4.JPG" class="img-circle" alt="Flower" width="250px" height="200px">
+                    <div class="carousel-caption">
+                        <h3>bekaa</h3>
+                        <p>Basmeh & Zeitooneh</p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+-->
+<!--    </div>-->
+
+<!--
+    <script>
+        $(document).ready(function () {
+            
+            $("#myCarousel").carousel();
+
+          
+            $(".item1").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+            $(".item4").click(function () {
+                $("#myCarousel").carousel(3);
+            });
+
+            $(".left").click(function () {
+                $("#myCarousel").carousel("prev");
+            });
+            $(".right").click(function () {
+                $("#myCarousel").carousel("next");
+            });
+        });
+    </script>
+-->
+
+
+
+
+
+
+
+
+    <div ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="components/home/database.js"></script>
+    <script src="components/home/homeService.js"></script>
+    <script src="components/home/search.js"></script>
+
+
+</body>
+
+</html>
